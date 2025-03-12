@@ -1,0 +1,21 @@
+package com.mycompany.psclista012025;
+import java.util.Scanner;
+
+public class Psclista012025 {
+    
+    public static void main(String[] args) {
+        
+        Scanner scan= new Scanner(System.in);
+
+        System.out.print("Digite o valor total da viagem (exemplo: 3029,50): R$ ");
+        double valorTotal = scan.nextDouble();
+     
+        double valorCadaLugar = valorTotal / 3;
+
+        System.out.printf("1 Local: Alemanha: R$ %.2f \n", valorCadaLugar);
+        System.out.printf("2 Local: Portugal: R$ %.2f \n", valorCadaLugar);
+        System.out.printf("3 Local: Italia: R$ %.2f \n", valorCadaLugar);
+        
+        scan.close();
+    }
+}
